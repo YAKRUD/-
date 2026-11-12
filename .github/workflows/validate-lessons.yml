@@ -1,0 +1,32 @@
+name: Validate JSON Lessons
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'lessons/**/*.json'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'lessons/**/*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Validate JSON
+      run: |
+        python scripts/validate_lessons.py lessons/ --recursive --max-size 100
+
+    - name: Success
+      if: success()
+      run: echo "✅ All lessons validated!"

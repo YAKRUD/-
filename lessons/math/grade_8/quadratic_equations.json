@@ -1,0 +1,105 @@
+{
+  "id": "math_grade8_quadratic_equations",
+  "title": "Квадратные уравнения",
+  "subject": "математика",
+  "grade": 8,
+  "duration_minutes": 60,
+  "version": "1.0.0",
+  "created_at": "2026-11-12T13:02:22.395000",
+  "updated_at": "2026-11-12T13:02:22.400000",
+  "introduction": "Изучаем квадратные уравнения - важнейший раздел алгебры.",
+  "theory_sections": [
+    {
+      "title": "Определение",
+      "content": "Квадратное уравнение: ax² + bx + c = 0, где a ≠ 0.\\n\\nКоэффициенты:\\n• a - старший (при x²)\\n• b - при x\\n• c - свободный член",
+      "subsections": [],
+      "key_points": [
+        "Форма: ax² + bx + c = 0",
+        "a ≠ 0 обязательно",
+        "Может иметь 0, 1 или 2 корня"
+      ]
+    },
+    {
+      "title": "Дискриминант",
+      "content": "D = b² - 4ac\\n\\n• D > 0: два корня\\n• D = 0: один корень\\n• D < 0: нет действительных корней",
+      "subsections": [],
+      "key_points": [
+        "D = b² - 4ac",
+        "Знак D определяет количество корней"
+      ]
+    },
+    {
+      "title": "Формулы корней",
+      "content": "x = (-b ± √D) / (2a)\\n\\nДве формулы:\\nx₁ = (-b + √D) / (2a)\\nx₂ = (-b - √D) / (2a)",
+      "subsections": [],
+      "key_points": [
+        "x = (-b ± √D) / (2a)",
+        "Работает при D ≥ 0"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "title": "Пример: Два корня",
+      "description": "x² - 5x + 6 = 0\\n\\na=1, b=-5, c=6\\nD = 25 - 24 = 1\\nx₁ = (5+1)/2 = 3\\nx₂ = (5-1)/2 = 2\\n\\nОтвет: x₁=3, x₂=2",
+      "code": "",
+      "image_url": "",
+      "notes": "Проверка: 3² - 5·3 + 6 = 0 ✓"
+    },
+    {
+      "title": "Пример: Один корень",
+      "description": "x² - 6x + 9 = 0\\n\\nD = 36 - 36 = 0\\nx = 6/2 = 3\\n\\nОтвет: x = 3",
+      "code": "",
+      "image_url": "",
+      "notes": "Полный квадрат: (x-3)²"
+    }
+  ],
+  "tasks": [
+    {
+      "question": "Дискриминант x² - 4x + 4 = 0?",
+      "options": [
+        "D = 0",
+        "D = 4",
+        "D = -4",
+        "D = 16"
+      ],
+      "correct_answer": 0,
+      "explanation": "D = 16 - 16 = 0",
+      "difficulty": "easy",
+      "points": 5
+    },
+    {
+      "question": "Корней у 2x² + 5x + 7 = 0?",
+      "options": [
+        "Два",
+        "Один",
+        "Нет действительных",
+        "Бесконечно"
+      ],
+      "correct_answer": 2,
+      "explanation": "D = 25 - 56 = -31 < 0",
+      "difficulty": "medium",
+      "points": 10
+    },
+    {
+      "question": "Решите x² - 7x + 12 = 0",
+      "options": [
+        "x₁=3, x₂=4",
+        "x₁=2, x₂=6",
+        "x₁=1, x₂=12",
+        "x₁=-3, x₂=-4"
+      ],
+      "correct_answer": 0,
+      "explanation": "D=1, x₁=(7+1)/2=4, x₂=(7-1)/2=3",
+      "difficulty": "medium",
+      "points": 15
+    }
+  ],
+  "prerequisites": [],
+  "tags": [
+    "алгебра",
+    "уравнения"
+  ],
+  "difficulty_level": "medium",
+  "author": "Команда разработки"
+}
